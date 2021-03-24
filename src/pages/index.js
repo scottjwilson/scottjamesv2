@@ -4,25 +4,38 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Projects from "../components/Projects"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
+    <section className="container">
+      <h1 className="text-3xl font-black my-4">Hi! I'm Scott</h1>
+      <p className="font-mono">
+        My purpose is to serve others through digital means. I build landing
+        pages, custom shopify stores, and sales funnels for your projects. Let's
+        get together and discuss your project.
+      </p>
+      <button className="flex items-center my-4 px-8 py-4 text-white bg-indigo-800 text-sm rounded-lg hover:bg-indigo-900 transition ease-in-out">
+        Get in touch
+        <div className="w-4 ml-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+            />
+          </svg>
+        </div>
+      </button>
+    </section>
+    <Projects />
   </Layout>
 )
 
