@@ -11,5 +11,5 @@
 }
 
 .card {
-  @apply transition duration-500 rounded-lg shadow-md ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl my-4;
+  @apply transition duration-500 rounded-lg shadow-md ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl my-4 cursor-pointer;
 }
